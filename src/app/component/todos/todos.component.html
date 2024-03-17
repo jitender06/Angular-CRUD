@@ -1,0 +1,8 @@
+<div>
+    <p>Create Todo...</p>
+    <input type="text" name="todo"/>
+    <button (click)="handleSubmit()">Submit</button>
+    <ul *ngFor = "let todo of todos">
+        <li>{{todo.sno}}  {{todo.title}} - {{todo.desc}}</li>
+    </ul>
+</div>
