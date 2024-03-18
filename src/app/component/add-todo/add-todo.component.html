@@ -1,0 +1,9 @@
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
+    <form (ngSubmit) = "onSubmit($event)">
+        <label for="Title">Title</label>
+        <input type="text" [(ngModel)]="title" name="title"/>
+        <label for="Description">Description</label>
+        <input type="text" [(ngModel)]="desc" name="desc"/>
+        <button>Submit</button>
+    </form>
+</div>

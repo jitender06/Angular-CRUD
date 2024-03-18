@@ -35,4 +35,14 @@ export class TodosComponent {
   handleSubmit() {
     console.log("clicked");
   }
+
+  deleteTodo(todo:Todo){
+    console.log(todo);
+    this.todos = this.todos.filter((item) => item.sno !== todo.sno );
+  }
+
+  addTodo(todo:Todo){
+    console.log(todo);
+    this.todos.push(todo);
+  }
 }
